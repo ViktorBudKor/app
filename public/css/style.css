@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: rgba(255, 255, 255, 1)
+}
+.rc-flat_list__wrapper{
+  padding: 0;
+    
+    background-size: cover;
+
+    overflow: visible;
+}
+.imgFluid{
+  background-image: url('https://images.unsplash.com/photo-1634161377437-f62ae060e21a?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+
+  
+}
+.rc-3e50b4 .rc-search_form__search_btn {
+  color: #333;
+}
+
+.rc-3e50b4 a.rc-flat__more__btn{
+  border-color:rgba(24, 59, 63, 1) ;
+  color: #333;
+}
+
+.rc-3e50b4 .rc-flat__book__btn {
+  background-color: rgba(24, 59, 63, 1);
+}
+.rc-3e50b4 .rc-flat__book__btn:hover{
+  background-color: #2E7884;
+}
+.rc-dfbe92{
+
+  background-color: rgba(255, 255, 255, 1)
+}
+.rc-container{
+  
+  border-radius: 11px;
+  background-color: rgba(255, 255, 255, 1)
+}
+.rc-main_wrapper{
+
+}
+.rc-3e50b4 .rc-search_form{
+  background-color: rgba(24, 59, 63, 1);
+}
+footer{
+  background-color: rgba(24, 59, 63, 1);
+}
+.rc-form-group label{
+  color: rgba(255, 255, 255, 1)
+}
+.rc-flat__info{
+  border-radius: 11px;
+  background-color: rgba(255, 255, 255, 1)
+}
+.rc-col-sm-12{
+  border-radius: 11px;
+  background-color: rgba(255, 255, 255, 1)
+}
+.auto{
+  margin-top: 3%;
+  background-color:rgba(24, 59, 63, 1) ;
+  border-radius: 11px;
+}
+.text-3xl{
+  color: #FFFF;
+
+}
+.text-lg{
+  color: #FFFF; 
+}

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <!-- Стандартный фавикон -->
+    <link rel="icon" href="public/favicon.ico" type="image/x-icon">
+    <!-- Для iPhone 6 Plus с @3x дисплеем: -->
+    <link rel="apple-touch-icon" sizes="180x180" href="public/images/apple-touch-icon.png">
+    <!-- Для последних версий Chrome и Firefox: -->
+    <link rel="icon" type="image/png" sizes="192x192" href="public/images/android-chrome-192x192.png">
+    <!-- Дополнительный тег для уверенности -->
+    <link rel="shortcut icon" href="public/favicon.ico">
+    <link rel="stylesheet" href="public/css/style.css" />
+    <title>Document</title>
+    <link href="public/css/output.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="imgFluid relative w-full h-96  bg-cover bg-right">
+      <!-- Overlay for darkening the image -->
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  
+      <!-- Header Content -->
+      <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4 md:px-8">
+          <!-- Logo or Title -->
+          <h1 class="text-2xl md:text-4xl font-bold">Аренда 24/7</h1>
+  
+          <!-- Navigation buttons or links (if needed) -->
+          <nav class="flex mt-6 space-x-4">
+              <a href="#auto" class="text-white px-4 py-2 border-b-2 border-transparent hover:border-white">Авто</a>
+              <a href="#about" class="text-white px-4 py-2 border-b-2 border-transparent hover:border-white">Контакты</a>
+          </nav>
+  
+          <!-- Main Title and Subtitle -->
+          <div class="mt-10 text-center">
+              <h2 class="text-3xl md:text-5xl font-bold">Квартиры посуточно</h2>
+              
+          </div>
+      </div>
+  </header>
+    <div class="appartment" id="rc-bookings-widget-root"></div>
+    <div class="container mx-auto px-4 md:px-8" id="auto">
+        
+        <!-- Заголовок блока -->
+        <div class="auto text-center mb-10">
+            <h2 class="text-3xl md:text-4xl font-bold text-800">Аренда автомобилей</h2>
+            <p class="text-lg text-600 mt-4">Выберите автомобиль для удобного перемещения</p>
+        </div>
+        </div>
+    <iframe id="a-prokat-frame" src="https://app.a-prokat.com/vidjet?cityId=410&rid=1145" style="width:100%;" frameBorder="0"></iframe>
+
+    <footer class=" text-white py-10">
+      <div class="container mx-auto px-4 md:px-8">
+          <div class="flex flex-col md:flex-row md:justify-between items-center space-y-6 md:space-y-0">
+              
+              <!-- Logo -->
+              <div class="flex items-center space-x-3">
+                  <img src="public/images/logo.png" alt="Logo" class="w-12 h-12">
+                  <span class="text-xl font-semibold">Аренда 24/7</span>
+              </div>
+  
+              <!-- Contact Info -->
+              <div class="text-center md:text-left">
+                  <p class="text-lg">Телефон: <a href="tel:+123456789" class="underline hover:text-gray-300">+1 (234) 567-89</a></p>
+                  <p class="text-lg">Адрес: ул. Примерная, дом 1, город</p>
+              </div>
+  
+              <!-- Social Links -->
+              <div class="flex space-x-4" id="about">
+                  <!-- Telegram Icon -->
+                  <a href="https://t.me/yourusername" target="_blank" aria-label="Telegram" class="hover:text-gray-300 h-1" >
+                      <img src="public/images/tg-logo.png" alt="Logo" class="h-16">
+                  </a>
+                  
+                  <!-- WhatsApp Icon -->
+                  <a href="https://wa.me/123456789" target="_blank" aria-label="WhatsApp" class="hover:text-gray-300">
+                    <img src="public/images/whats-logo.png" alt="" class="h-16">
+                </a>
+              </div>
+          </div>
+  
+          <!-- Footer Bottom Text -->
+          <div class="mt-8 text-center text-sm text-gray-300">
+              <p>© 2024 Аренда 24/7. Все права защищены.</p>
+          </div>
+      </div>
+  </footer>
+
+  </body>
+  <script type="text/javascript">
+    const iframe =window.document.getElementById('a-prokat-frame');
+    iframe.height = "500px";
+    window.addEventListener('message', function (e) {
+        if(e.origin == 'https://app.a-prokat.com' && e.data.height>400){
+            iframe.height = e.data.height + "px";
+        }
+    })
+</script>
+  <script src="public/js/smooth.js"></script>
+  <script src="https://realtycalendar.ru/webpack/application.js?_t=af45640fa4f13e8e73ea"></script>
+  <script type="text/javascript">RC_BOOKINGS_WIDGET.init('eb8d40def18119958aaa48c2f54d68c6');</script>
+</html>
